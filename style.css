@@ -288,12 +288,14 @@ form.btn2{
     margin-top: 20px;
 }
 
+/*...................css fora s mall screen.....................*/
 
-
-nav.fas{
+/* Hide the Bars icon */
+nav .fas{
     display: none;
 }
-@media only screen and (max-width: 500x) {
+
+@media only screen and (max-width: 600px) {
     
     
     .header-text{
@@ -303,12 +305,13 @@ nav.fas{
     .header-text h1{
         font-size: 30px;
     }
-    nav.fas{
+    nav .fas{
         display: block;
         font-size: 25px;
     }
+    
     nav ul{
-        background: #ff004f;
+        background: black;
         position: fixed;
         top: 0;
         right: -200px;
@@ -318,26 +321,27 @@ nav.fas{
         z-index: 2;
         transition: right 0.5s;
     }
-    navul li{
+    nav ul li{
         display: block;
         margin: 25px;
     }
-    nav ul.fa{
+    nav ul .fas{
         position: absolute;
         top: 25px;
         cursor: pointer;
+        
         left: 25px;
     }
-    .subtitel{
-        font-size: 20px;
+    .subtitle{
+        font-size: 40px;
     }
-    .about .column1,.about .column2{
+    .aboutcolumn1,.aboutcolumn2{
         flex-basis: 100%;
     }    
-    .about .column1{
+    .aboutcolumn1{
         margin-top: 30px;
     }
-    .about .column2{
+    .aboutcolumn2{
         font-size: 14px;
     }  
     .tab-links{
